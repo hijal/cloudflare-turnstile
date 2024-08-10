@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Node &dash; CloudFlare Turnstile</title>
+  </head>
+  <body>
+    <div class="flex min-h-[100dvh] flex-col items-center justify-center bg-white shadow-lg px-4 py-12 sm:px-6 lg:px-8">
+      <div class="mx-auto max-w-md text-center">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-circle-check-big mx-auto h-12 w-12 text-primary"
+        >
+          <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+          <path d="m9 11 3 3L22 4"></path>
+        </svg>
+        <h1 class="mt-4 text-3xl font-bold tracking-tight text-foreground sm:text-4xl">Login Successful</h1>
+        <p class="mt-4 text-muted-foreground">Welcome back!</p>
+        <div class="mt-6">
+          <a
+            href="/"
+            class="inline-flex items-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow-sm transition-colors hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+          >
+            Home
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

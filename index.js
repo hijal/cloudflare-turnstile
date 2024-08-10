@@ -22,6 +22,10 @@ app.get('/login', (req, res) => {
   res.sendFile(__dirname + '/login.html');
 });
 
+app.get('/success', (req, res) => {
+  res.sendFile(__dirname + '/success.html');
+});
+
 app.post('/login', async (req, res) => {
   const { email, password } = req.body;
 
@@ -43,10 +47,8 @@ app.post('/login', async (req, res) => {
     }
 
     if (email.trim() === config.user.email && password.trim() === config.user.password) {
-      res.json({
-        message: 'Login successful',
-        success: true
-      });
+      res.redirect('/success');
+      return;
     } else {
       res.status(401).json({
         message: 'Invalid email or password',
